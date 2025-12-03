@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SWAPI Explorer</title>
+<head>
+    <title>SWAPI Explorer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">SWAPI Explorer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="./swapi.html">Explore</a>
+             </li>
+             </ul>
+        </div>
+        </div>
+        </nav>
+<div class="container mt-4">
+<div class="row">
+<div class="col-md-6 mb-4">
+     <h2>People</h2>
+        <button id="load-people" class="btn btn-primary mb-3">
+                Load People
+        </button>
+<div id="people-spinner" class="text-center mb-3" style="display: none;">
+<div class="spinner-border" role="status"></div>
+</div>
+    <ul id="people-list" class="list-group"></ul>
+</div>
+<div class="col-md-6 mb-4">
+     <h2>Films</h2>
+        <button id="load-films" class="btn btn-warning mb-3">
+                Load Films
+        </button>
+<div id="films-spinner" class="text-center mb-3" style="display: none;">
+<div class="spinner-border" role="status"></div>
+</div>
+  <ul id="films-list" class="list-group"></ul>
+</div>
+</div>
+</div>
+<div id="details-dialog" title="Details" style="display: none;">
+</div>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
