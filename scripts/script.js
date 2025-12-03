@@ -27,37 +27,6 @@ function loadPeople() {
             alert("Error loading people from SWAPI.");
         }
     });
-
-}
-$(function () {
-    $("#details-dialog").dialog({
-        autoOpen: false,
-        width: 500
-    });
-    $("#load-people").on("click", function () {
-        loadPeople();
-    });
-    $("#load-films").on("click", function () {
-        loadFilms();
-    });
-
-});
-function loadPeople() {
-    $("#people-spinner").show();
-    $("#people-list").empty();
-    $.ajax({
-        url: "https://swapi.dev/api/people/",
-        method: "GET",
-        success: function (response) {
-            $("#people-spinner").hide();
-            displayPeople(response.results);
-        },
-
-        error: function () {
-            $("#people-spinner").hide();
-            alert("Error loading people from SWAPI.");
-        }
-    });
 }function loadFilms() {
     $("#films-spinner").show();
     $("#films-list").empty();
